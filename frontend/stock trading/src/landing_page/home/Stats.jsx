@@ -2,11 +2,11 @@ import React from 'react';
 
 function Stats() {
     return (
-        <div className='container p-5'>
+        <div className='container p-5 mb-5'>
             <div className='row align-items-center'>
                 
                 {/* LEFT TEXT CONTENT */}
-                <div className='col-6 p-5'>
+                <div className='col-6 p-5 mb-5'>
                     {/* Main Heading: Darker (fw-bold) and Bigger (fs-1) */}
                     <h1 className='fs-1 fw-bold mb-5 text-dark'>Trust with confidence</h1>
 
@@ -33,17 +33,17 @@ function Stats() {
                 </div>
 
                 {/* RIGHT IMAGE & LINKS */}
-                <div className='col-6 p-5'>
+                <div className='col-6 p-5 mb-5'>
                     <img 
                         src='media/imges/ecosystem.png' 
                         style={{ width: "100%" }} 
                         alt="Zerodha Ecosystem" 
                     />
-                    <div className='text-center mt-4'>
+                    <div className='text-center mt-4 mb-5'>
                         <a href="" className='mx-3 fw-semibold' style={{ textDecoration: "none" }}>
                             Explore our products <i className="fa fa-long-arrow-right" aria-hidden="true"></i>
                         </a>
-                        <a href="" className='mx-3 fw-semibold' style={{ textDecoration: "none" }}>
+                        <a href="" className='mx-3 fw-semibold mb-5' style={{ textDecoration: "none" }}>
                             Try Kite <i className="fa fa-long-arrow-right" aria-hidden="true"></i>
                         </a>
                     </div>
