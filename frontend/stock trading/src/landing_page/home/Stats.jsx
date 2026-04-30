@@ -1,5 +1,5 @@
 import React from 'react';
-
+import {Link , NavLink} from 'react-router-dom'
 function Stats() {
     return (
         <div className='container p-5 mb-5'>
@@ -40,12 +40,12 @@ function Stats() {
                         alt="Zerodha Ecosystem" 
                     />
                     <div className='text-center mt-4 mb-5'>
-                        <a href="" className='mx-3 fw-semibold' style={{ textDecoration: "none" }}>
+                        <Link to="" className='mx-3 fw-semibold' style={{ textDecoration: "none", color:"blue" }}>
                             Explore our products <i className="fa fa-long-arrow-right" aria-hidden="true"></i>
-                        </a>
-                        <a href="" className='mx-3 fw-semibold mb-5' style={{ textDecoration: "none" }}>
+                        </Link>
+                        <Link to="" className='mx-3 fw-semibold mb-5'style={{ color: "blue", textDecoration: "none" }}>
                             Try Kite <i className="fa fa-long-arrow-right" aria-hidden="true"></i>
-                        </a>
+                        </Link>
                     </div>
                 </div>
 

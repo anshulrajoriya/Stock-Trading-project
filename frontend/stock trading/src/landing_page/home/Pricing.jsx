@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link , NavLink} from 'react-router-dom'
 
 function Pricing() {
     return (
@@ -11,9 +12,9 @@ function Pricing() {
                         We pioneered the concept of discount broking and price transparency in India. 
                         Flat fees and no hidden charges.
                     </p>
-                    <a href="" className='fw-semibold mt-3' style={{ textDecoration: "none" }}>
+                    <Link to="" className='fw-semibold mt-3' style={{ color: "blue", textDecoration: "none" }}>
                         See pricing <i className="fa fa-long-arrow-right" aria-hidden="true"></i>
-                    </a>
+                    </Link>
                 </div>
 
                 {/* Gap Column */}

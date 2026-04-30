@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link , NavLink} from 'react-router-dom'
 
 function Education() {
     return (
@@ -23,17 +24,17 @@ function Education() {
                         Varsity, the largest online stock market education book in the world 
                         covering everything from the basics to advanced trading.
                     </p>
-                    <a href="" className='fw-semibold d-inline-block mb-5' style={{ textDecoration: "none" }}>
+                    <Link to="" className='fw-semibold d-inline-block mb-5'style={{ color: "blue", textDecoration: "none" }}>
                         Varsity <i className="fa fa-long-arrow-right" aria-hidden="true"></i>
-                    </a>
+                    </Link>
 
                     <p className='text-muted'>
                         TradingQ&A, the most active trading and investment community in 
                         India for all your market related queries.
                     </p>
-                    <a href="" className='fw-semibold' style={{ textDecoration: "none" }}>
+                    <Link to="" className='fw-semibold' style={{ color: "blue", textDecoration: "none" }}>
                         TradingQ&A <i className="fa fa-long-arrow-right" aria-hidden="true"></i>
-                    </a>
+                    </Link>
                 </div>
 
             </div>
