@@ -2,8 +2,8 @@ import React from 'react';
 import { Link,NavLink } from 'react-router-dom';
 function Navbar() {
   return (
-    <nav className="bg-white border-bottom fixed-top" style={{ height: "100px", zIndex: 1000 }}>
-      <div className="container d-flex align-items-center justify-content-between h-100">
+<nav className="navbar-custom bg-white border-bottom fixed-top" style={{ height: "100px", zIndex: 1000 }}>
+<div className="container d-flex align-items-center justify-content-between h-100">
 
         {/* Logo */}
         <a href="/" className="navbar-brand mr-5">

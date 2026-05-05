@@ -9,7 +9,9 @@ function HeroSection() {
             />
             <h1 className="text-center mt-5 display-2 text-dark">Invest in everything</h1>
         <p className="text-center mt-3 fs-3 text-dark">Online platform to invest in stock, derivatives,mutul fund and more</p>
-<button type="button" className="  btn btn-primary btn-lg px-5 mt-5 mb-5">Signup Now</button>
+        
+<button type="button" className="  btn btn-center btn-lg px-5 mt-5 mb-5">Signup Now</button>
+
        </div>
          
     )
