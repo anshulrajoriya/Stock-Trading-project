@@ -499,7 +499,7 @@ const renderContent = (items) => (
      {activeId === "zerodha" &&
   renderContent([
     { label: "Open account steps", path: "openaccount" },
-    { label: "Documents required", path: "documentspage" },
+    { label: "Documents required", path: "requireddocument" },
     { label: "Charges & fees", path: "charges" }
   ])
 }
@@ -522,9 +522,9 @@ const renderContent = (items) => (
 
         {activeId === "kite" &&
           renderContent([
-          { label: "Open account steps", path: "openaccount" },
-            { label: "Documents required", path: "documentspage"},
-            { label: "Charges & fees", path: "charges" }
+          { label: "IPO", path: "ipo" },
+            { label: "Alert", path: "alert"},
+            { label: "Chart and Model", path: "chartmodel" }
           ])
         }
       </div>
@@ -546,7 +546,6 @@ const renderContent = (items) => (
 
         {activeId === "funds" &&
           renderContent([
-            { label: "Add money", path: "addmoney" },
                         { label: "Add bank account", path: "addbank" },
             { label: "Withdraw money", path: "withdraw" },
           ])
@@ -597,7 +596,6 @@ const renderContent = (items) => (
           renderContent([
                      { label: "Mutul funds", path: "mutul" },
             { label: "General and Orders", path: "general" },
-            { label: "Add money", path: "addmoney" },
             { label: "Fix deposit", path: "fix" },
 
           ])
@@ -607,7 +605,7 @@ const renderContent = (items) => (
 
       <div className=" col-lg-4">
 
-        <div className="light-orange ml-5 fs-5 text-center border  p-3 sticky-top" style={{ top: "20px"  }}>
+        <div className="light-orange ml-5 fs-5 text-center border  p-3 " style={{ top: "20px"  }}>
           <p className="text-primary mb-0">
             <Link to="#" className="text-decoration-none fs-4">
              • Adjust of F&O contracts of 

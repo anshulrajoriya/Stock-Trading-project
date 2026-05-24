@@ -12,13 +12,15 @@ function SupportPage() {
     <div>
       <Hero />
 
-      <div className="container mt-4">
+      <div className="container mt-4 ">
         <div className="row">
 
           {/* LEFT SIDE */}
-          <div className={isMain ? "col-12" : "col-lg-6"}>
+          
+          <div className={isMain ? "col-12" : "col-lg-6" }>
             <CreateTicket />
           </div>
+          
 
           {/* RIGHT SIDE */}
           {!isMain && (
