@@ -1,0 +1,516 @@
+.counter {
+  font-size: 16px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: var(--accent);
+  background: var(--accent-bg);
+  border: 2px solid transparent;
+  transition: border-color 0.3s;
+  margin-bottom: 24px;
+
+  &:hover {
+    border-color: var(--accent-border);
+  }
+  &:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 2px;
+  }
+}
+
+.hero {
+  position: relative;
+
+  .base,
+  .framework,
+  .vite {
+    inset-inline: 0;
+    margin: 0 auto;
+  }
+
+  .base {
+    width: 170px;
+    position: relative;
+    z-index: 0;
+  }
+
+  .framework,
+  .vite {
+    position: absolute;
+  }
+
+  .framework {
+    z-index: 1;
+    top: 34px;
+    height: 28px;
+    transform: perspective(2000px) rotateZ(300deg) rotateX(44deg) rotateY(39deg)
+      scale(1.4);
+  }
+
+  .vite {
+    z-index: 0;
+    top: 107px;
+    height: 26px;
+    width: auto;
+    transform: perspective(2000px) rotateZ(300deg) rotateX(40deg) rotateY(39deg)
+      scale(0.8);
+  }
+}
+
+#center {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  place-content: center;
+  place-items: center;
+  flex-grow: 1;
+
+  @media (max-width: 1024px) {
+    padding: 32px 20px 24px;
+    gap: 18px;
+  }
+}
+
+#next-steps {
+  display: flex;
+  border-top: 1px solid var(--border);
+  text-align: left;
+
+  & > div {
+    flex: 1 1 0;
+    padding: 32px;
+    @media (max-width: 1024px) {
+      padding: 24px 20px;
+    }
+  }
+
+  .icon {
+    margin-bottom: 16px;
+    width: 22px;
+    height: 22px;
+  }
+
+  @media (max-width: 1024px) {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+#docs {
+  border-right: 1px solid var(--border);
+
+  @media (max-width: 1024px) {
+    border-right: none;
+    border-bottom: 1px solid var(--border);
+  }
+}
+
+#next-steps ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 8px;
+  margin: 32px 0 0;
+
+  .logo {
+    height: 18px;
+  }
+
+  a {
+    color: var(--text-h);
+    font-size: 16px;
+    border-radius: 6px;
+    background: var(--social-bg);
+    display: flex;
+    padding: 6px 12px;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+    transition: box-shadow 0.3s;
+
+    &:hover {
+      box-shadow: var(--shadow);
+    }
+    .button-icon {
+      height: 18px;
+      width: 18px;
+    }
+  }
+
+  @media (max-width: 1024px) {
+    margin-top: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    li {
+      flex: 1 1 calc(50% - 8px);
+    }
+
+    a {
+      width: 100%;
+      justify-content: center;
+      box-sizing: border-box;
+    }
+  }
+}
+
+#spacer {
+  height: 88px;
+  border-top: 1px solid var(--border);
+  @media (max-width: 1024px) {
+    height: 48px;
+  }
+}
+
+.ticks {
+  position: relative;
+  width: 100%;
+
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    top: -4.5px;
+    border: 5px solid transparent;
+  }
+
+  &::before {
+    left: 0;
+    border-left-color: var(--border);
+  }
+  &::after {
+    right: 0;
+    border-right-color: var(--border);
+  }
+}
+.custom-link {
+  color: #424242;
+  text-decoration: none;
+  font-size: 50px;   /* 👈 increase from 14–15px */
+  font-weight: 600;  /* 👈 makes it cleaner */
+  transition: 0.3s;
+}
+
+.custom-link:hover {
+  color: #387ed1;
+}
+
+.col {
+  color: black;
+  font-size: 300px;
+}
+
+.tabs {
+  display: flex;
+  justify-content: center;
+  gap: 60px;              /* 🔥 gap increase */
+  border-bottom: 1px solid #ddd;
+}
+
+.tab {
+  font-size: 24px;        /* 🔥 bigger text */
+  padding: 12px 0;
+  cursor: pointer;
+  color: #6c757d;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.tab:hover {
+  color: #387ed1;
+}
+
+.tab.active {
+  color: #387ed1;
+  font-weight: 500;
+}
+
+.tab.active::after {
+  content: "";
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: #387ed1;
+  border-radius: 2px;
+}
+
+
+.table-box {
+  border: 1px solid #e6e6e6;
+  border-radius: 8px;
+  padding: 25px;
+  background: #fff;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05); /* 🔥 soft shadow */
+}
+
+.pricing-table {
+  margin: 0;
+}
+
+.pricing-table th {
+  font-size: 16px;
+  font-weight: 600;
+  color: #444;
+  padding: 15px;
+}
+
+.table td {
+  font-size: 15px;
+  color: #666;
+  padding: 15px;
+}
+
+.table tr {
+  border-bottom: 1px solid #eee;
+}
+
+.table tr:last-child {
+  border-bottom: none;
+}
+
+.tab.active::after {
+  transition: all 0.3s ease;
+}
+
+.navbar-custom .custom-link {
+  font-size: 16px;
+}
+
+.navbar-custom ul {
+  gap: 40px;
+}
+
+
+
+
+/* SECTION */
+.pricing-section {
+  max-width: 80%;
+  margin: auto;
+  max-height: 1000px;
+}
+
+/* TABS */
+.pricing-tabs {
+  display: flex;
+  justify-content: flex-start;
+  gap: 50px;   /* 🔥 spacing */
+  border-bottom: 1px solid #eee;
+}
+
+.pricing-tab {
+  font-size: 40px;        /* 🔥 bigger text */
+  font-weight: 600;       /* 🔥 bold look */
+  color: #222;            /* 🔥 dark text */
+  padding: 12px 5px;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.pricing-tab:hover {
+  color: #387ed1;
+}
+
+.pricing-tab.active {
+  color: #387ed1;
+}
+
+.pricing-tab.active::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: #387ed1;
+  border-radius: 2px;
+}
+
+/* TABLE BOX */
+.pricing-table-box {
+  border: 1px solid #eee;
+  border-radius: 6px;
+  background: #fff;
+  padding: 0;
+  height: 80%;
+  width: 100%;
+}
+
+/* TABLE */
+.pricing-table {
+  margin: 0;
+  border-collapse: collapse;
+}
+
+.pricing-table th {
+  font-size: 15px;
+  font-weight: 500;
+  color: #444;
+  padding: 18px;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+}
+
+.pricing-table td {
+  font-size: 14px;
+  color: #666;
+  padding: 18px;
+  border-bottom: 1px solid #f1f1f1;
+  line-height: 1.6;
+}
+
+.pricing-table tr:last-child td {
+  border-bottom: none;
+}
+
+.table th {
+  font-size: 17px;
+  font-weight: 600;
+  color: #333;
+}
+
+.table td {
+  font-size: 16px;
+  color: #555;
+}
+
+.table {
+  width: 100%;
+}
+
+/* Same width as pricing table */
+.pricing-section {
+  max-width: 900px;
+}
+
+/* Heading */
+.pricing-heading {
+  font-size: 20px;
+  font-weight: 500;
+  color: #424242;
+}
+
+/* SAME box style */
+.pricing-table-box {
+  border: 1px solid #eee;
+  border-radius: 6px;
+  padding: 20px;
+  background: #fff;
+}
+
+/* SAME table style */
+.pricing-table th {
+  font-size: 14px;
+  color: #555;
+  font-weight: 600;
+}
+
+.pricing-table td {
+  font-size: 14px;
+  color: #444;
+}
+
+/* align right */
+.text-end {
+  text-align: right;
+}
+
+/* FREE badge */
+.badge-free {
+  background: #4caf50;
+  color: #fff;
+  font-size: 12px;
+  padding: 4px 10px;
+  border-radius: 4px;
+}
+
+
+.pricing-note {
+  font-size: 15px;
+  color: #777;
+  line-height: 1.6;
+  max-width: 850px;
+}
+
+
+.input-group-text {
+  background-color: #f1f3f5;
+  
+}
+
+.form-control {
+  background-color: #f8f9fa;
+  
+}
+
+.support-wrapper {
+  background-color: #f8f9fa; /* same as input */
+}
+
+.ticket-item {
+  background-color: #f8f9fa;
+  padding: 18px 20px;
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+  margin-bottom: 15px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.ticket-item:hover {
+  background-color: #f1f3f5;
+}
+
+/* Icon box (left grey square) */
+.icon-box {
+  width: 40px;
+  height: 40px;
+  background-color: #e9ecef;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  color: #0d6efd;
+}
+
+
+.collapse {
+  margin-top: 0 !important;
+}
+
+.collapse.show {
+  margin-top: 10px;
+}
+
+
+
+/* Rotates the arrow smoothly */
+.transition-arrow {
+  transition: transform 0.3s ease;
+}
+
+.rotate {
+  transform: rotate(180deg);
+}
+
+/* Ensure the icon box doesn't collapse */
+.icon-box-bg {
+  width: 40px;
+  height: 40px;
+  background-color: rgba(13, 110, 253, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+}
+
+/* Remove any global fs-1 or large line-heights that might be causing gaps */
+.container p, .container span {
+  line-height: normal;
+}
+
+.light-orange {
+  background-color: #fff3e0;
+}
