@@ -261,7 +261,6 @@ app.post("/signin", async (req, res) => {
 
     // FIND USER
     const user = await UserModel.findOne({ phone });
-
     if (!user) {
       return res.status(400).json({
         message: "User Not Found",
