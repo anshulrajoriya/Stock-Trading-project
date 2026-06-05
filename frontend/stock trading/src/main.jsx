@@ -49,7 +49,7 @@ import OpenAccount from "./landing_page/OpenAccount.jsx";
 import Accountsetup from "./landing_page/support/zerodha account/Accountsetup.jsx";
 import Fees from "./landing_page/support/zerodha account/Fees.jsx";
 import RequiredDocument from "./landing_page/support/zerodha account/RequiredDocument.jsx";
-import Dashboards from "./dashboard/components/Dashboards";
+// import Dashboards from "./dashboard/components/Dashboards";
 
 
 const router = createBrowserRouter(
@@ -72,11 +72,11 @@ const router = createBrowserRouter(
 
       <Route path="open-account" element={<OpenAccount />} />
 
-      {/* DASHBOARD */}
+      {/* DASHBOARD
       <Route
         path="dashboard/*"
         element={<Dashboards />}
-      />
+      /> */}
 
       {/* SUPPORT */}
       <Route path="support" element={<SupportPage />}>
